@@ -41,9 +41,9 @@ document.addEventListener("DOMContentLoaded", function() {
         showBiometricAnimation('faceid-animation');
     }
 
-    function showBiometricAnimation(animationId) {
+    function showBiometricAnimation(animationClass) {
         const animation = document.getElementById("biometric-animation");
-        animation.className = `biometric-animation ${animationId}`;
+        animation.className = `biometric-animation ${animationClass}`;
         animation.style.display = "block";
         setTimeout(() => {
             playSound("sound-effect");
@@ -56,4 +56,5 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById('username-display').innerText = username;
     }
 });
+
 
