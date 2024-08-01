@@ -52,9 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     if (window.location.pathname.endsWith('success.html')) {
-        const username = localStorage.getItem('username');
-        document.getElementById('username-display').innerText = username;
-    }
-});
+        const username =
+
 
 
