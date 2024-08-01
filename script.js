@@ -38,10 +38,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     window.verifyFaceID = function() {
         playSound("faceid-sound");
-        showBiometricAnimation('faceid-animation');
-    }
+        showBiometricAnimation('face
 
-    function
 
 
 
