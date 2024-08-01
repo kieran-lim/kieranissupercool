@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const validPassword = "demoPass";
     const validOTP = "123456";
 
-    function playSound() {
-        const sound = document.getElementById("sound-effect");
+    function playSound(soundId) {
+        const sound = document.getElementById(soundId);
         sound.play();
     }
 
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
         if (username === validUsername && password === validPassword) {
-            playSound();
+            playSound("sound-effect");
             localStorage.setItem('username', username);
             window.location.href = 'otp.html';
         } else {
@@ -24,19 +24,31 @@ document.addEventListener("DOMContentLoaded", function() {
     window.verifyOTP = function() {
         const otp = document.getElementById('otp').value;
         if (otp === validOTP) {
-            playSound();
+            playSound("sound-effect");
             window.location.href = 'biometric.html';
         } else {
             alert('Invalid OTP');
         }
     }
 
-    window.verifyBiometric = function() {
-        // Simulating biometric verification
+    window.verifyFingerprint = function() {
+        playSound("fingerprint-sound");
+        showBiometricAnimation('fingerprint-animation');
+    }
+
+    window.verifyFaceID = function() {
+        playSound("faceid-sound");
+        showBiometricAnimation('faceid-animation');
+    }
+
+    function showBiometricAnimation(animationId) {
+        const animation = document.getElementById("biometric-animation");
+        animation.className = `biometric-animation ${animationId}`;
+        animation.style.display = "block";
         setTimeout(() => {
-            playSound();
+            playSound("sound-effect");
             window.location.href = 'success.html';
-        }, 2000);
+        }, 3000);
     }
 
     if (window.location.pathname.endsWith('success.html')) {
@@ -44,3 +56,4 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById('username-display').innerText = username;
     }
 });
+
