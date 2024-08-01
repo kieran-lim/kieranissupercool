@@ -1,8 +1,8 @@
 // script.js
 document.addEventListener("DOMContentLoaded", function() {
-    const validUsername = "demoUser";
-    const validPassword = "demoPass";
-    const validOTP = "123456";
+    const validUsername = "Timothy";
+    const validPassword = "kieranissupercool";
+    const validOTP = "89101860";
 
     function playSound(soundId) {
         const sound = document.getElementById(soundId);
