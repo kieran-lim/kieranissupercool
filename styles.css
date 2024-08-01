@@ -61,9 +61,31 @@ button:hover {
     background: #0056b3;
 }
 
+.biometric-button {
+    width: calc(50% - 10px);
+    margin: 5px;
+}
+
 .message {
     margin-top: 20px;
     color: green;
+}
+
+.biometric-animation {
+    margin-top: 20px;
+    display: none;
+}
+
+#fingerprint-animation {
+    background: url('fingerprint.gif') no-repeat center center;
+    width: 100px;
+    height: 100px;
+}
+
+#faceid-animation {
+    background: url('faceid.gif') no-repeat center center;
+    width: 100px;
+    height: 100px;
 }
 
 @keyframes fadeIn {
