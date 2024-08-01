@@ -14,11 +14,16 @@
         <div class="login-container">
             <h1>Biometric Verification</h1>
             <h2>Step 3: Verify Biometric</h2>
-            <button onclick="verifyBiometric()">Verify Biometric</button>
+            <p>Please choose a method:</p>
+            <button class="biometric-button" onclick="verifyFingerprint()">Fingerprint</button>
+            <button class="biometric-button" onclick="verifyFaceID()">Face ID</button>
+            <div id="biometric-animation" class="biometric-animation"></div>
         </div>
         <div class="message" id="message"></div>
     </div>
     <audio id="sound-effect" src="sound.mp3" preload="auto"></audio>
+    <audio id="fingerprint-sound" src="fingerprint.mp3" preload="auto"></audio>
+    <audio id="faceid-sound" src="faceid.mp3" preload="auto"></audio>
     <script src="script.js"></script>
 </body>
 </html>
