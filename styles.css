@@ -76,13 +76,13 @@ button:hover {
     display: none;
 }
 
-#fingerprint-animation {
+.fingerprint-animation {
     background: url('fingerprint.gif') no-repeat center center;
     width: 100px;
     height: 100px;
 }
 
-#faceid-animation {
+.faceid-animation {
     background: url('faceid.gif') no-repeat center center;
     width: 100px;
     height: 100px;
@@ -98,3 +98,4 @@ button:hover {
         transform: translateY(0);
     }
 }
+
