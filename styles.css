@@ -77,15 +77,19 @@ button:hover {
 }
 
 .fingerprint-animation {
-    background: url('fingerprint.gif') no-repeat center center;
     width: 100px;
     height: 100px;
+    background: url('fingerprint-scan.gif') no-repeat center center;
+    background-size: contain;
+    animation: scan 3s infinite;
 }
 
 .faceid-animation {
-    background: url('faceid.gif') no-repeat center center;
     width: 100px;
     height: 100px;
+    background: url('face-scan.gif') no-repeat center center;
+    background-size: contain;
+    animation: scan 3s infinite;
 }
 
 @keyframes fadeIn {
@@ -98,4 +102,17 @@ button:hover {
         transform: translateY(0);
     }
 }
+
+@keyframes scan {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 
