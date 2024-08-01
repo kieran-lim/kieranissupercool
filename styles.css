@@ -79,7 +79,7 @@ button:hover {
 .fingerprint-animation {
     width: 100px;
     height: 100px;
-    background: url('fingerprint-scan.gif') no-repeat center center;
+    background: url('https://media.giphy.com/media/dZX3A2GV1vk6a/source.gif') no-repeat center center;
     background-size: contain;
     animation: scan 3s infinite;
 }
@@ -87,7 +87,7 @@ button:hover {
 .faceid-animation {
     width: 100px;
     height: 100px;
-    background: url('face-scan.gif') no-repeat center center;
+    background: url('https://media.giphy.com/media/3og0INyCmHlNylks9O/source.gif') no-repeat center center;
     background-size: contain;
     animation: scan 3s infinite;
 }
@@ -114,5 +114,4 @@ button:hover {
         opacity: 0;
     }
 }
-
 
