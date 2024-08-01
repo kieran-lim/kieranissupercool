@@ -1,7 +1,7 @@
 // script.js
 document.addEventListener("DOMContentLoaded", function() {
-    const validUsername = "demoUser";
-    const validPassword = "demoPass";
+    const validUsername = "Timothy";
+    const validPassword = "kieranissupercool";
     const validOTP = "123456";
 
     function playSound(soundId) {
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
         showBiometricAnimation('faceid-animation');
     }
 
-    function show
+    function
 
 
 
