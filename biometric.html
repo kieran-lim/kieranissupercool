@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login to Your Account</title>
+    <title>Biometric Verification</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,15 +12,18 @@
             <img src="https://via.placeholder.com/120" alt="Bank Logo">
         </div>
         <div class="login-container">
-            <h1>Login to Your Account</h1>
-            <h2>Step 1: Enter Username and Password</h2>
-            <input type="text" id="username" placeholder="Username">
-            <input type="password" id="password" placeholder="Password">
-            <button onclick="login()">Next</button>
+            <h1>Biometric Verification</h1>
+            <h2>Step 3: Verify Biometric</h2>
+            <p>Please choose a method:</p>
+            <button class="biometric-button" onclick="verifyFingerprint()">Fingerprint</button>
+            <button class="biometric-button" onclick="verifyFaceID()">Face ID</button>
+            <div id="biometric-animation" class="biometric-animation"></div>
         </div>
         <div class="message" id="message"></div>
     </div>
     <audio id="sound-effect" src="https://www.soundjay.com/button/button-3.mp3" preload="auto"></audio>
+    <audio id="fingerprint-sound" src="https://www.soundjay.com/button/button-16.mp3" preload="auto"></audio>
+    <audio id="faceid-sound" src="https://www.soundjay.com/button/button-19.mp3" preload="auto"></audio>
     <script src="script.js"></script>
 </body>
 </html>
